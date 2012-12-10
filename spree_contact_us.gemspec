@@ -11,12 +11,10 @@ Gem::Specification.new do |s|
   s.authors            = ['Alexander Negoda', 'Michael Bianco']
   s.email              = ['alexander.negoda@gmail.com', 'info@cliffsidedev.com']
 
-  #s.files         = `git ls-files`.split("\n")
-  #s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_dependency 'spree_core', '~> 1.1.0'
+  s.add_dependency 'spree_core', '~> 1.1'
   s.add_dependency 'honeypot-captcha', '0.0.2'
 
   s.add_development_dependency 'rspec-rails'
