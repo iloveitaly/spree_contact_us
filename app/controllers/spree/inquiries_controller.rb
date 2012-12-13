@@ -1,5 +1,8 @@
 module Spree
   class InquiriesController < Spree::BaseController
+    ssl_required
+    
+    # TODO is this needed?
     helper 'spree/admin/base'
 
     def new
