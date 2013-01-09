@@ -1,6 +1,6 @@
 module Spree
   class InquiryMailer < ActionMailer::Base
-    default :from => Spree::MailMethod.current.preferred_mails_from
+    default :from => Spree::MailMethod.current.try(:preferred_mails_from) || ''
 
     def notification(inquiry, customer = false)
       @inquiry = inquiry
